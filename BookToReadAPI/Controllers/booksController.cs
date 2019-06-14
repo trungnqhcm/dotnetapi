@@ -51,7 +51,7 @@ namespace BookToReadAPI.Controllers
 
         // PUT: api/books/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Putbook(long id, book book)
+        public async Task<ActionResult> Putbook(long id, book book)
         {
             if (id != book.id)
             {
